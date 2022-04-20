@@ -41,14 +41,17 @@ h3{
 #navbar{
     display:flex;
     width:100%;
+    flex:1;
 }
 .navbar__menus{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .navbar__left__menus{
     display:flex;
     justify-content:start;
+    margin-right:20px;
 }
 .navbar__right__menus{
     display:flex;
@@ -79,6 +82,7 @@ h3{
     justify-content:space-evenly;
     align-items: center;
     margin:10px;
+    flex-wrap:wrap;
 }
 .product{
     margin:20px;

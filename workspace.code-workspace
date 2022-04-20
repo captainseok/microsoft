@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "hankook",
+			"path": "..\\hankook"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hankook"
+	}
+}
