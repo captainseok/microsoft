@@ -147,26 +147,29 @@ a{
 @media screen and (max-width: 768px){
     .navbar__btn{
         display:block;
-        position:fixed;
-        margin:10px;
+        position:absolute;
+        left:50px;
+        top:11px;
     
     }
     .navbar__menus{
         display:flex;
         flex-direction: column;
-        align-items: flex-start;
     }
     .navbar__left__menus{
         flex-direction: column;
-        display:none;
+        display: none;
     }
-
     .navbar__left__menus.active{
         display:flex;
-        opacity:0.5;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-left:30px;
+        padding-top: 20px;
     }
     .navbar__logo{
-        display:flex;
+        top:10px;
+        position:absolute;
         align-self:center;
     }
     .logo{
@@ -179,11 +182,23 @@ a{
     }
     .navbar__menu2{
         display:none;
+
+    }
+    .navbar__menu3{
+        position:absolute;
+        left:55px;
+        top:-5px;
     }
     .navbar__menu4{
-        display:flex;
+        top:20px;
+        position:absolute;
+        top:-5px;
+        right:40px;
     }
     .navbar__menu5{
-        display:flex;   
+        display:flex;
+        position:absolute;
+        right:10px;
+        top:-5px;   
     }
 }   
