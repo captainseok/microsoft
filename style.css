@@ -22,6 +22,9 @@
     --animation-duration: 300ms;
 }
 
+body{
+    margin:0;
+}
 li{
     list-style:none;
 }
@@ -34,34 +37,68 @@ h1{
 h3{
     color:blue;
 }
+a{
+    text-decoration:none;
+    color:black;
+}
 .section{
     text-align: center;
-    margin:40px;
+    margin:20px;
 }
 #navbar{
-    display:flex;
     width:100%;
-    flex:1;
+}
+
+.navbar__logo{
+    display:flex;
+    padding-left:50px;
+}
+.navbar__btn{
+    display:none;
 }
 .navbar__menus{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .navbar__left__menus{
     display:flex;
-    justify-content:start;
-    margin-right:20px;
+    justify-content:space-between;
+    padding-left:0px;
+
 }
+
 .navbar__right__menus{
     display:flex;
-    justify-content:end;
+    padding-left:180px;
+    padding-right:25px;
 }
 .navbar__menu{
     display:flex;
-    margin:25px;
+    margin:20px;
+    align-items: center;
 }
-
+.navbar__menu2{
+    display:flex;
+    margin:20px;
+    align-items: center;
+}
+.navbar__menu3{
+    display:flex;
+    margin:20px;
+    align-items: center;
+}
+.navbar__menu4{
+    display:flex;
+    margin:20px;
+    align-items: center;
+}
+.navbar__menu5{
+    display:flex;
+    margin:20px;
+    align-items: center;
+}
 
 .page1{
     background:url(images/banner01.webp) center/cover no-repeat;
@@ -69,6 +106,14 @@ h3{
     height:600px;
     display:flex;
     align-items: center;
+}
+.page1__chr{
+    position:relative;
+    right:50px;
+}
+.page1__click{
+    position:relative;
+    right:50px;
 }
 .page2{
     background:url(images/section03-banner.webp) center/cover no-repeat;
@@ -86,12 +131,59 @@ h3{
 }
 .product{
     margin:20px;
+    align-items:center;
 }
 .product__image{
-    width:100%;
-    height:100%;
+    width:400px;
+    height:200px;
 }
 .product__description{
-    width:100%;
+    width:400px;
     height:100%;
+ 
 }
+
+/*768아래로 줄었을떄 바뀌야하는 것 */
+@media screen and (max-width: 768px){
+    .navbar__btn{
+        display:block;
+        position:fixed;
+        margin:10px;
+    
+    }
+    .navbar__menus{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__left__menus{
+        flex-direction: column;
+        display:none;
+    }
+
+    .navbar__left__menus.active{
+        display:flex;
+        opacity:0.5;
+    }
+    .navbar__logo{
+        display:flex;
+        align-self:center;
+    }
+    .logo{
+        width:120px;
+        height:25px;
+    }
+    .navbar__right__menus{
+        display:flex;
+        padding:0px;
+    }
+    .navbar__menu2{
+        display:none;
+    }
+    .navbar__menu4{
+        display:flex;
+    }
+    .navbar__menu5{
+        display:flex;   
+    }
+}   
